@@ -40,7 +40,7 @@ function App() {
           injectedProvider={injectedProvider}
           localProvider={localProvider}
         />
-        <div style={{display:"none"}}>
+        <div>
           <TimeReport
             mainnetProvider={mainnetProvider}
           />

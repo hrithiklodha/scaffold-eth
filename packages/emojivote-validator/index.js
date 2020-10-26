@@ -6,12 +6,12 @@ const { ethers, Contract } = require('ethers');
 //FIRST YOU NEED TO SETUP GOOGLE SHEETS PERMISSIONS:
 //https://developers.google.com/sheets/api/quickstart/nodejs
 
-const SPREADSHEET_ID = '1Yh2k5DY66b2tct01EVAV-6jgSFFJtv5CEEtnxr_la_0'
+const SPREADSHEET_ID = '1aAei7evGldgwpqjxuIJ7YbAKEZbf7pNwlWwbjw88fZ4'
 
 const OUTPUT_FILE = "../react-app/src/validVotes.json";
 const ERC20_ABI = [{"constant": true,"inputs": [{"name": "_owner","type": "address"}],"name": "balanceOf","outputs": [{"name": "balance","type": "uint256"}],"payable": false,"type": "function"}]
-const ERC20_TOKEN_ADDRESS = "0x6b175474e89094c44da98b954eedeac495271d0f"
-const mainnetProvider = new ethers.providers.InfuraProvider("mainnet","2717afb6bf164045b5d5468031b93f87")
+const ERC20_TOKEN_ADDRESS = "0xc7ad46e0b8a400bb3c915120d284aafba8fc4735"
+const mainnetProvider = new ethers.providers.InfuraProvider("rinkeby","2717afb6bf164045b5d5468031b93f87")
 const tokenContract = new Contract(ERC20_TOKEN_ADDRESS, ERC20_ABI,mainnetProvider);
 
 
